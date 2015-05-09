@@ -42,6 +42,7 @@ else
     % Plot z = 0
     % Notice you need to specify the range [0, 0]
     contour(u, v, z, [0, 0], 'LineWidth', 2)
+    %print -dpng 'regularized_degree_2.png';
 end
 hold off
 

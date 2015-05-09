@@ -29,10 +29,10 @@ m = length(y)
         J_history(i, 1) = computeCost(X, y, theta);
     endfor
     J_history
-    figure;
-    plot( 1 : num_iters, J_history, 'r');
-    xlabel('itetations')
-    ylabel('cost')
-    print -dpng 'cost-plot-alpha_0.03.png';
-    pause;
+    %figure;
+    %plot( 1 : num_iters, J_history, 'r');
+    %xlabel('itetations')
+    %ylabel('cost')
+    %print -dpng 'cost-plot-alpha_0.03.png';
+    %pause;
 end
