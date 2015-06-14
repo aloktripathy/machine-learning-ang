@@ -16,7 +16,7 @@ J_history = zeros(num_iters, 1);
     %       of the cost function (computeCost) and gradient here.
     %
 
-m = length(y)
+m = length(y);
     for i = 1 : num_iters
         #theta_0 = theta( 1 , 1 ) - alpha * sum( X * theta - y ) / m
         #theta_1 = theta( 2 , 1 ) - alpha * sum( ( X * theta - y )' * X( : , 2 ) ) / m
@@ -28,7 +28,7 @@ m = length(y)
         % Save the cost J in every iteration    
         J_history(i, 1) = computeCost(X, y, theta);
     endfor
-    J_history
+    J_history;
     %figure;
     %plot( 1 : num_iters, J_history, 'r');
     %xlabel('itetations')
