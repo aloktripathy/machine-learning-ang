@@ -19,10 +19,9 @@ W = zeros(L_out, 1 + L_in);
 % Note: The first row of W corresponds to the parameters for the bias units
 %
 
+epsilon_bound = sqrt(6) / sqrt( L_in + L_out)
 
-
-
-
+W = rand(L_out, L_in + 1) * 2 * epsilon_bound - epsilon_bound;
 
 
 
