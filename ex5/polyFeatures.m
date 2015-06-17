@@ -15,7 +15,7 @@ X_poly = zeros(numel(X), p);
 %
 % 
 
-
+X_poly = repmat(X, 1, p) .^ repmat(1:p, size(X, 1), 1);
 
 
 
